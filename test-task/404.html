@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; URL=/test-task/" />
+    <script>
+      // redirect to index.html with hash fallback
+      const path = location.pathname.replace('/test-task', '');
+      location.replace('/test-task/#' + path);
+    </script>
   </head>
   <body></body>
 </html>
